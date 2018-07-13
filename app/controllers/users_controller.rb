@@ -16,14 +16,11 @@ class UsersController < ApplicationController
     end
   end
 
-<<<<<<< HEAD
   get '/users/:slug' do
     @user = User.find_by_slug(params[:slug])
     erb :"users/show"
   end
 
-=======
->>>>>>> 447731662e3c55971994b4a2635472b148432720
   get '/users/show' do
     current_user
     erb :"users/show"
