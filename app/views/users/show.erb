@@ -1,13 +1,13 @@
-<<<<<<< HEAD
+
 <h3><%= @user.username %> tweets</h3>
 <ul>
   <% @user.tweets.each do |tweet| %>
-=======
+
 <h3>Welcome, <%= @current_user.username %></h3>
 <a href="/tweets/new">Create a new tweet!</a><br>
 <ul>
   <% Tweet.all.each do |tweet| %>
->>>>>>> 447731662e3c55971994b4a2635472b148432720
+
     <li><%= tweet.user.username %> says <a href="/tweets/<%= tweet.id %>"><%= tweet.content %></a></li>
   <% end %>
 </ul>
